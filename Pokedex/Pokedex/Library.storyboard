@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u0R-st-7g4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Library-->
+        <scene sceneID="Kea-Og-zoP">
+            <objects>
+                <viewController title="Library" id="u0R-st-7g4" customClass="LibraryViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SNt-Hh-5m8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrs-U4-W5b">
+                                <rect key="frame" x="87.5" y="243.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Oln-sg-wgX"/>
+                                    <constraint firstAttribute="height" constant="200" id="ton-A4-bFr"/>
+                                </constraints>
+                                <state key="normal" title="Select a picture"/>
+                                <connections>
+                                    <action selector="selectPicture:" destination="u0R-st-7g4" eventType="touchUpInside" id="58F-gU-hBg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xrs-U4-W5b" firstAttribute="centerX" secondItem="SNt-Hh-5m8" secondAttribute="centerXWithinMargins" id="4sE-4p-wYz"/>
+                            <constraint firstItem="xrs-U4-W5b" firstAttribute="centerY" secondItem="r8q-bR-fRw" secondAttribute="centerY" id="rZi-Yg-fED"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="r8q-bR-fRw"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Library" id="H2a-by-V6S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNj-su-geT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1358" y="41"/>
+        </scene>
+    </scenes>
+</document>
